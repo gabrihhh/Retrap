@@ -4,7 +4,9 @@
         <div class="header-tools">
             <h4>Ola, Gabriel!</h4>
             <mat-icon>shopping_cart</mat-icon>
-            <mat-icon>menu</mat-icon>
+            <mat-icon (click)="toggleNavegacao()" *ngIf="!navIsOpen">menu</mat-icon>
+            <mat-icon (click)="toggleNavegacao()" *ngIf="navIsOpen">close</mat-icon>
         </div>
     </div>
+    <app-nav [isOpen]="navIsOpen"></app-nav>
 </div>

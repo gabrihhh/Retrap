@@ -4,8 +4,12 @@
     <div class="itens">
         <div *ngFor="let item of items">
             <div class="card">
-                <h2>{{item.nome}}</h2>
-            </div>
+                <img src="{{item.img}}" alt="produto">
+                <h4>{{item.nome}}</h4>
+                <h6>{{item.descricao}}</h6>
+                <h5>{{item.tipo}}</h5>
+                <h5>{{item.diametro}} x {{item.comprimento}}</h5>
+                <app-default-button></app-default-button>
         </div>
     </div>
     

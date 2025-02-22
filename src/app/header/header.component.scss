@@ -5,6 +5,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    background-color: white;
 }
 
 .header-content{
@@ -24,4 +27,8 @@
     align-items: center;
     justify-content: space-between;
     gap: 15px;
+
+    mat-icon{
+        cursor: pointer;
+    }
 }
